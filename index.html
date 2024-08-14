@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-loader</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body div{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 10px solid #d8d8d8;
+            border-right-color: #007aff;
+            animation: loader 1s infinite linear;
+        }
+
+        @keyframes loader {
+            0% { transform: rotate(0deg);}
+            100% { transform: rotate(360deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
